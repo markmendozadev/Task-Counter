@@ -1,0 +1,80 @@
+#container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.task__container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  box-shadow: 1px 2px 3px 4px #000;
+}
+.task__input {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+.add__task__button,
+.remove__task__button {
+  padding: 0.8em 2.4em;
+  display: block;
+  margin: 0.2rem;
+  text-align: center;
+  color: #000;
+}
+
+.task_paragraph {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.remove__task__button[disabled],
+.add__task__button[disabled] {
+  background: rgb(233, 233, 233);
+  color: rgb(199, 199, 199);
+  cursor: not-allowed;
+}
+.add__task__button,
+.remove__task__button {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+.error {
+  display: block;
+  margin: 1rem;
+  font-size: 1rem;
+  color: red;
+  text-align: center;
+}
+.task_count__container {
+  display: block;
+  text-align: center;
+}
+#plusCount {
+  padding: 0.5rem 1.5rem;
+  font-size: 2.4rem;
+  background: skyblue;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px 1px rgb(109, 178, 206);
+  color: #000000;
+  margin: 1rem;
+}
+#minusCount {
+  padding: 0.5rem 1.5rem;
+  font-size: 2.5rem;
+  background: #b40606;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px 1px #e9bfbf;
+  color: #e0e0e0;
+}
+#taskCountSpan {
+  font-size: 3rem;
+}
